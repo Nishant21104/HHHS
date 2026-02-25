@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="OCR.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+  <title>Helping Hands, Helping Smiles</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Impact
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header id="header" class="header d-flex align-items-center">
+
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <h1 style="font-size:20px;">Helping Hands, Helping Smiles<span></span></h1>
+                </a>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <%--<li><a href="Dashboard.aspx">Home</a></li>--%>
+                        <li><a href="Dashboard.aspx">Dashboard</a></li>
+                        <li><a href="ViewPaymentHistory.aspx">Payment History</a></li>
+                        <li class="dropdown"><a href="#"><span>Fundraiser</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                            <ul>
+                              <li><a href="AddFundraiser.aspx"><span>Add Fundraiser</span></a></li>
+                                <%--<li><a href="ViewFundraiser.aspx">View Fund collected</a></li>  --%>                          
+                                <li><a href="ViewFundraiser.aspx">View Fundraiser</a></li>                              
+                            </ul>
+                        </li>
+                        <li><a href="ViewAppointments.aspx">View appointments</a></li>
+                        <li class="dropdown"><a href="#"><span>View Users</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                            <ul>                                  
+                                  <li><a href="ViewNGO.aspx">View NGO</a></li>
+                                  <li><a href="ViewDonor.aspx">View Donor</a></li>
+                                <li><a href="ViewFundraiser.aspx">Add/View FundRaiser</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ChangePassword.aspx">Change Password</a></li>        
+                        <li><a href="../Home/Home.aspx">Log Out</a></li>
+                    </ul>
+                </nav>
+                <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+                <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            </div>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <div id="preloader"></div>
+        
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+
+        <script src="assets/js/main.js"></script>
+    </form>
+</body>
+</html>

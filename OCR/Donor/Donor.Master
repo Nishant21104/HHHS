@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Donor.master.cs" Inherits="OCR.Donor.Donor" %>
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Helping Hands, Helping Smiles</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="Donorassets/css/bootstrap.min.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="Donorassets/css/font-awesome.min.css">
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="Donorassets/css/owl.carousel.css">
+
+    <!-- Template main Css -->
+    <link rel="stylesheet" href="Donorassets/css/style.css">
+
+    <!-- Modernizr -->
+    <script src="Donorassets/js/modernizr-2.6.2.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+    <header class="main-header">
+
+
+        <nav class="navbar navbar-static-top">
+
+            <div class="navbar-main">
+
+                <div class="container">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+                        </button>
+
+                        <a href="index.html" class="logo d-flex align-items-center">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <h1 style="font-size:20px;">Helping Hands, Helping Smiles<span></span></h1>
+                </a>
+
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse pull-right">
+
+                        <ul class="nav navbar-nav">
+
+                            <li><a class="is-active" href="DonorHome.aspx">HOME</a></li>
+                            <li class="has-child"><a href="#">My Appointments</a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="MakeAppointment.aspx">Make an Appointment</a></li>
+                                    <li class="submenu-item"><a href="ViewAppointment.aspx">View Appointments</a></li>
+                                </ul>
+                            </li>
+                             <li><a href="PayementHistory.aspx" >Payment History</a></li>
+                            <li class="has-child"><a href="#">Find to Donate</a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="NgoList.aspx">NGO Details</a></li>
+                                    <li class="submenu-item"><a href="FundRaiserLists.aspx">Fundraiser Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-child"><a href="#">My Account</a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="MyProfile.aspx">My Profile</a></li>
+                                    <li class="submenu-item"><a href="ChangePassword.aspx">Change Password</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../Home/Home.aspx">Log Out</a></li>
+
+                        </ul>
+
+                    </div>
+                    <!-- /#navbar -->
+
+                </div>
+                <!-- /.container -->
+
+            </div>
+            <!-- /.navbar-main -->
+
+
+        </nav>
+
+    </header>
+    <!-- /. main-header -->
+
+
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+
+
+
+
+  
+    <!-- main-footer -->
+
+
+
+
+   
+
+    <!--  Scripts
+    ================================================== -->
+
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="Donorassets/js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Bootsrap javascript file -->
+    <script src="Donorassets/js/bootstrap.min.js"></script>
+
+    <!-- owl carouseljavascript file -->
+    <script src="Donorassets/js/owl.carousel.min.js"></script>
+
+    <!-- Template main javascript -->
+    <script src="Donorassets/js/main.js"></script>
+ </form>
+</body>
+   
+</html>
